@@ -5,21 +5,26 @@ public class Demonstration3 {
 	public static void main(String[] args) {
 
 		Demonstration3 dem = new Demonstration3();
-//		dem.invocacion1();
+		dem.invocacion1();
 //		dem.invocacion2();
-		dem.invocacion3();
+//		dem.invocacion3();
 //		dem.invocacion4();
 		
 		// Vuelve a la presentación
 	}
 
 	public void invocacion1() {
-		System.out.println("***Demonstration-6.Rethrowing an exception.***");
+		System.out.println("***Demonstration-3.Rethrowing an exception.***");
 		int a = 100, b = 1;
 
-		Demonstration3Operation op = new Demonstration3Operation();
-		
-		op.divide(a, b);
+		Demonstration3Operation op = new Demonstration3Operation();		
+		try {
+			
+			op.divide(a, b);
+			
+		}catch(Exception e) {
+			System.out.println("La capturé en Demonstration3");
+		}
 		
 		System.out.println("Dividiendo invocacion 1");
 	}
