@@ -8,7 +8,7 @@ public class Demonstration1 {
 		int a = 100;
 		int b = 2;
 		int result;
-		b -= 2;// b beomes 0
+		b -= 2;// b becomes 0
 		
 		result = a / b;
 		

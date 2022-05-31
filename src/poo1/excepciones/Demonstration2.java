@@ -3,8 +3,10 @@ package poo1.excepciones;
 public class Demonstration2 {
 	
 	/*
-	 * Pero luego de ejecutar esto, qué pasa si quiero procesar la excepcion, 
-	 * pero además, quiero relanzarla para que llegue hasta la GUI?
+	 * Preguntas a considerar:
+	 * a) Se puede incluir un if, evitando usar un try-catch... entonces ¿para qué el try-catch?
+	 * b) Qué pasa si quiero procesar la excepcion, es decir, mostrar un mensaje particular? 
+	 * c) Cómo se hace para que la exception llegue hasta la GUI?
 	 */
 	
 	public static void main(String[] args) {
@@ -13,8 +15,6 @@ public class Demonstration2 {
 		int a = 100; 
 		int b = 2;
 		int result;
-		
-//		b -= 2;// b = 0
 		
 		try {
 			
