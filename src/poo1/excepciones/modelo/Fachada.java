@@ -11,13 +11,9 @@ public class Fachada {
 		
 		int edadInt = 0;
 		
-		try {
-		
+		try {		
 			edadInt = Integer.parseInt(edad);
-		
 		}catch(Exception e) {
-			System.err.println("Se encontró error: "+e.getMessage());
-//			throw e;
 			throw new Exception("El valor de edad no es válido.");
 		}
 		// Pero ¿qué pasa si ingresaron mal la información 

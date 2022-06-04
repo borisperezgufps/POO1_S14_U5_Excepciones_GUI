@@ -24,6 +24,7 @@ public class UsuarioController {
 		
 		try {
 			fac.registrarUsuario(nombres, edad); 
+			
 			Alert al = new Alert(AlertType.INFORMATION);
 			al.setContentText("El usuario se registró exitosamente.");
 			al.show();
